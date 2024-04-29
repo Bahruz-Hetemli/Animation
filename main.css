@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPRaII37HH1EywxMv7lva095T5ZkG3LPbtsjM9TQGUHGZodjVP-aqMOyRS29Iy7GqnSDsSz8uwBIA9EMGunNOYptflStyX1F1BdvKKBXVyBnm5aOubEkqqcWXfnmXJHgQrFKxX2ruOH9Ymrut1XZop_BLVhvjgWYzmQpfgCb60MmgrMo_NMd9IQ-mr/s1600/mvehfqz6w2ges2dj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.airplane{
+    width: 300px;
+    /* background-color: yellow; */
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    z-index: 2;
+    animation: fly 15s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+@keyframes fly{
+   0%{
+    left: -20%;
+}
+100%{
+       transform: translateX(1500px);
+
+   }
+}
+
+.cloud{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* background-color: red; */
+    left: 40%;
+    top: 20%;
+    z-index: 10;
+    animation: cloud 30s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+@keyframes cloud{
+    from{
+        left: 100vw;
+    }
+    to{
+        left: -30%;
+    }
+}
+
+.birds{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 20%;
+    top: 40%;
+    animation: birds 20s linear infinite;
+    /* background-color: blue; */
+
+    img{
+        width: 100%;
+    }
+}
+
+@keyframes birds{
+    from{
+        left: 100vw;
+    }
+    to{
+        left: -30%;
+    }
+}
